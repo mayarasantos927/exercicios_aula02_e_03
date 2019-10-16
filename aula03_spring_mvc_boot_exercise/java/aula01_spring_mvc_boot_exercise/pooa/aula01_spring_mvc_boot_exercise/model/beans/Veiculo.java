@@ -1,0 +1,76 @@
+package aula01_spring_mvc_boot_exercise.pooa.aula01_spring_mvc_boot_exercise.model.beans;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Veiculo implements Serializable{
+	
+	@Id
+	@GeneratedValue
+	private Long id;
+	private String marca;
+	private String modelo;
+	private int ano_fabricacao;
+	private String cor;
+	private double litro;
+	private double km;
+	private double total;
+	
+	
+	
+	public double getTotal() {
+		return total;
+	}
+	public void setTotal(double total) {
+		this.total = total;
+	}
+	public double getLitro() {
+		return litro;
+	}
+	public void setLitro(double litro) {
+		this.litro = litro;
+	}
+	public double getKm() {
+		return km;
+	}
+	public void setKm(double km) {
+		this.km = km;
+	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getMarca() {
+		return marca;
+	}
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+	public String getModelo() {
+		return modelo;
+	}
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	public int getAno_fabricacao() {
+		return ano_fabricacao;
+	}
+	public void setAno_fabricacao(int ano_fabricacao) {
+		this.ano_fabricacao = ano_fabricacao;
+	}
+	public String getCor() {
+		return cor;
+	}
+	public void setCor(String cor) {
+		this.cor = cor;
+	}
+	
+	
+
+}
